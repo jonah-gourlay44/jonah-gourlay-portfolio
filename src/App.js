@@ -26,22 +26,22 @@ function App() {
       {
         page: 'Home',
         icon: <HomeIcon />,
-        link: '/jonah-portfolio'
+        link: '/jonah-gourlay-portfolio'
       },
       {
         page: 'Coursework',
         icon: <SchoolIcon />,
-        link: '/jonah-portfolio/coursework'
+        link: '/jonah-gourlay-portfolio/coursework'
       },
       {
         page: 'Personal Projects',
         icon: <ScienceIcon />,
-        link: '/jonah-portfolio/projects'
+        link: '/jonah-gourlay-portfolio/projects'
       },
       {
         page: 'Work Experience',
         icon: <WorkIcon />,
-        link: '/jonah-portfolio/experience'
+        link: '/jonah-gourlay-portfolio/experience'
       }
     ]} />
 
@@ -50,10 +50,10 @@ function App() {
       <ThemeProvider theme={theme} >
         <Router>
           <Routes>
-            <Route path='/jonah-portfolio' element={<HomePage menu={menu} />} />
-            <Route path='/jonah-portfolio/coursework' element={<SchoolPage menu={menu} />} />
-            <Route path='/jonah-portfolio/projects' element={<ProjectPage menu={menu} />} />
-            <Route path='/jonah-portfolio/experience' element={<WorkPage menu={menu} />} />
+            <Route path='/jonah-gourlay-portfolio' element={<HomePage menu={menu} />} />
+            <Route path='/jonah-gourlay-portfolio/coursework' element={<SchoolPage menu={menu} />} />
+            <Route path='/jonah-gourlay-portfolio/projects' element={<ProjectPage menu={menu} />} />
+            <Route path='/jonah-gourlay-portfolio/experience' element={<WorkPage menu={menu} />} />
           </Routes>
         </Router>
       </ThemeProvider>
