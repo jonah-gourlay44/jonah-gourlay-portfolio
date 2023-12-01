@@ -12,6 +12,8 @@ import SchoolPage from './SchoolPage'
 import WorkPage from './WorkPage'
 import ProjectPage from './ProjectPage'
 
+import profile from './backgrounds/profile.jpg'
+
 const theme = createTheme({
   palette: {
     grey: {
@@ -21,39 +23,45 @@ const theme = createTheme({
 })
 
 function App() {
-  const menu = 
-    <MenuDrawer items={[
-      {
-        page: 'Home',
-        icon: <HomeIcon />,
-        link: '/jonah-gourlay-portfolio'
-      },
-      {
-        page: 'Coursework',
-        icon: <SchoolIcon />,
-        link: '/jonah-gourlay-portfolio/coursework'
-      },
-      {
-        page: 'Personal Projects',
-        icon: <ScienceIcon />,
-        link: '/jonah-gourlay-portfolio/projects'
-      },
-      {
-        page: 'Work Experience',
-        icon: <WorkIcon />,
-        link: '/jonah-gourlay-portfolio/experience'
-      }
-    ]} />
+  const portfolio_items = [
+    {
+      page: 'Home',
+      icon: <HomeIcon />,
+      link: '/',
+      component: HomePage
+    },
+    {
+      page: 'Coursework',
+      icon: <SchoolIcon />,
+      link: '/coursework',
+      component: SchoolPage
+    },
+    {
+      page: 'Personal Projects',
+      icon: <ScienceIcon />,
+      link: '/projects',
+      component: ProjectPage
+    },
+    {
+      page: 'Work Experience',
+      icon: <WorkIcon />,
+      link: '/experience',
+      component: WorkPage
+    }
+  ]
+
+  const menu = <MenuDrawer items={portfolio_items} />
 
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme} >
-        <Router>
+        <Router basename='/jonah-gourlay-portfolio'>
           <Routes>
-            <Route path='/jonah-gourlay-portfolio' element={<HomePage menu={menu} />} />
-            <Route path='/jonah-gourlay-portfolio/coursework' element={<SchoolPage menu={menu} />} />
-            <Route path='/jonah-gourlay-portfolio/projects' element={<ProjectPage menu={menu} />} />
-            <Route path='/jonah-gourlay-portfolio/experience' element={<WorkPage menu={menu} />} />
+            {
+              portfolio_items.map((item) => (
+                <Route path={item.link} element={<item.component menu={menu} />} />
+              ))
+            }
           </Routes>
         </Router>
       </ThemeProvider>

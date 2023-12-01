@@ -52,7 +52,8 @@ export default function MenuDrawer({ items }) {
             display: 'flex',
             justifyContent: 'center',
             paddingTop: 2,
-            paddingLeft: 2
+            paddingLeft: 2,
+            zIndex: 200
           }}>
             <IconButton onClick={toggleDrawer(true)}>
                 <MenuIcon />
