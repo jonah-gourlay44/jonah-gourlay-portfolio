@@ -1,0 +1,28 @@
+.profile {
+    float: right;
+}
+
+.signature {
+    width: 10vw;
+}
+
+@media (max-width: 900px) {
+    .profile {
+        width: 50%;
+    }
+
+    .signature {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        float: none;
+        width: 100%;
+    }
+
+    .signature {
+        width: 20vw;
+    }
+}
