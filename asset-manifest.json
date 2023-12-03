@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/jonah-gourlay-portfolio/static/css/main.636113ad.css",
-    "main.js": "/jonah-gourlay-portfolio/static/js/main.8172d0fb.js",
+    "main.css": "/jonah-gourlay-portfolio/static/css/main.6e981886.css",
+    "main.js": "/jonah-gourlay-portfolio/static/js/main.b5e26ba3.js",
     "static/js/787.7da95b79.chunk.js": "/jonah-gourlay-portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/img_0047.jpg": "/jonah-gourlay-portfolio/static/media/img_0047.43df507b9b8e980c4426.jpg",
     "static/media/profile.jpg": "/jonah-gourlay-portfolio/static/media/profile.6beb65902b90a3eb767b.jpg",
     "index.html": "/jonah-gourlay-portfolio/index.html",
-    "main.636113ad.css.map": "/jonah-gourlay-portfolio/static/css/main.636113ad.css.map",
-    "main.8172d0fb.js.map": "/jonah-gourlay-portfolio/static/js/main.8172d0fb.js.map",
+    "main.6e981886.css.map": "/jonah-gourlay-portfolio/static/css/main.6e981886.css.map",
+    "main.b5e26ba3.js.map": "/jonah-gourlay-portfolio/static/js/main.b5e26ba3.js.map",
     "787.7da95b79.chunk.js.map": "/jonah-gourlay-portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.636113ad.css",
-    "static/js/main.8172d0fb.js"
+    "static/css/main.6e981886.css",
+    "static/js/main.b5e26ba3.js"
   ]
 }
