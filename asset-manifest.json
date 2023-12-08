@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/jonah-gourlay-portfolio/static/css/main.15158850.css",
-    "main.js": "/jonah-gourlay-portfolio/static/js/main.b5e26ba3.js",
+    "main.css": "/jonah-gourlay-portfolio/static/css/main.576b62ba.css",
+    "main.js": "/jonah-gourlay-portfolio/static/js/main.56df54dc.js",
     "static/js/787.7da95b79.chunk.js": "/jonah-gourlay-portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/img_0047.jpg": "/jonah-gourlay-portfolio/static/media/img_0047.43df507b9b8e980c4426.jpg",
+    "static/media/zermatt_img_0034.jpg": "/jonah-gourlay-portfolio/static/media/zermatt_img_0034.b6103e114f772c7de6b6.jpg",
     "static/media/profile.jpg": "/jonah-gourlay-portfolio/static/media/profile.6beb65902b90a3eb767b.jpg",
     "index.html": "/jonah-gourlay-portfolio/index.html",
-    "main.15158850.css.map": "/jonah-gourlay-portfolio/static/css/main.15158850.css.map",
-    "main.b5e26ba3.js.map": "/jonah-gourlay-portfolio/static/js/main.b5e26ba3.js.map",
+    "main.576b62ba.css.map": "/jonah-gourlay-portfolio/static/css/main.576b62ba.css.map",
+    "main.56df54dc.js.map": "/jonah-gourlay-portfolio/static/js/main.56df54dc.js.map",
     "787.7da95b79.chunk.js.map": "/jonah-gourlay-portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15158850.css",
-    "static/js/main.b5e26ba3.js"
+    "static/css/main.576b62ba.css",
+    "static/js/main.56df54dc.js"
   ]
 }
