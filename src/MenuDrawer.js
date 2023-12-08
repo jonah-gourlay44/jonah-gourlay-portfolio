@@ -10,9 +10,8 @@ import ListItemText from '@mui/material/ListItemText'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import { Link } from 'react-router-dom'
 
-export default function MenuDrawer({ items }) {
+export default function MenuDrawer({ items, color }) {
     const [isDrawerOpen, setIsDrawerOpen] = React.useState(false)
-
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return
@@ -56,7 +55,7 @@ export default function MenuDrawer({ items }) {
             zIndex: 200
           }}>
             <IconButton onClick={toggleDrawer(true)}>
-                <MenuIcon />
+                <MenuIcon color={color}/>
             </IconButton>
             <Drawer anchor='left' open={isDrawerOpen} onClose={toggleDrawer(false)}>
                 {list}

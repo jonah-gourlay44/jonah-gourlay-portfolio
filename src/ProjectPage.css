@@ -1,0 +1,8 @@
+.background {
+    top: -10vh;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}

@@ -12,13 +12,17 @@ import SchoolPage from './SchoolPage'
 import WorkPage from './WorkPage'
 import ProjectPage from './ProjectPage'
 
-import profile from './backgrounds/profile.jpg'
+import projects from './meta/projects.json'
 
 const theme = createTheme({
   palette: {
     grey: {
       main: '#545353',
+      dark: '#403f3f'
     },
+    white: {
+      main: '#FFFFFF'
+    }
   }
 })
 
@@ -40,7 +44,9 @@ function App() {
       page: 'Personal Projects',
       icon: <ScienceIcon />,
       link: '/projects',
-      component: ProjectPage
+      component: ProjectPage,
+      menu_color: 'white',
+      meta: projects
     },
     {
       page: 'Work Experience',
@@ -50,7 +56,7 @@ function App() {
     }
   ]
 
-  const menu = <MenuDrawer items={portfolio_items} />
+  console.log(projects)
 
   return (
     <StyledEngineProvider injectFirst>
@@ -59,7 +65,7 @@ function App() {
           <Routes>
             {
               portfolio_items.map((item) => (
-                <Route path={item.link} element={<item.component menu={menu} />} />
+                <Route path={item.link} element={<item.component meta={item.meta} menu={<MenuDrawer items={portfolio_items} color={item.menu_color}/>} />} />
               ))
             }
           </Routes>
