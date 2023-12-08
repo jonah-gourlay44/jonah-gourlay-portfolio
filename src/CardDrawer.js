@@ -29,7 +29,7 @@ export default function CardDrawer({ color, cards }) {
       <IconButton onClick={toggleDrawer(true)}>
         <UpIcon color={color} />
       </IconButton>
-      <Drawer anchor='bottom' open={isDrawerOpen} onClose={toggleDrawer(false)} hideBackdrop PaperProps={{className: 'drawer-paper'}}>
+      <Drawer variant='persistent' anchor='bottom' open={isDrawerOpen} onClose={toggleDrawer(false)} hideBackdrop PaperProps={{className: 'drawer-paper'}}>
         <Box sx={{
           display: 'flex',
           top: 0,
