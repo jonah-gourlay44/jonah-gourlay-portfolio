@@ -12,7 +12,7 @@ import SchoolPage from './SchoolPage'
 import WorkPage from './WorkPage'
 import ProjectPage from './ProjectPage'
 
-import projects from './meta/projects.json'
+import projects from './content/projects.json'
 
 const theme = createTheme({
   palette: {
@@ -38,7 +38,8 @@ function App() {
       page: 'Coursework',
       icon: <SchoolIcon />,
       link: '/coursework',
-      component: SchoolPage
+      component: SchoolPage,
+      menu_color: 'white'
     },
     {
       page: 'Personal Projects',

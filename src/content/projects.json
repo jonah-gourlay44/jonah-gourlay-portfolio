@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Diode Simulation",
+        "link": "https://github.com/jonah-gourlay44/pnFEM",
+        "description": "This was a fun project, because it combined two of my favourite topics: computation and physics. I was explored applications of the finite element method, and used it to calculate static operating curves for a diode. In the future, I will be trying to expand my simulation to calculate diode switching losses at different frequencies.",
+        "icon": "diode_icon.png",
+        "tags": ["FEM", "Python", "physics"]
+    },
+    {
+        "title": "Personal Portfolio",
+        "link": "https://github.com/jonah-gourlay44/jonah-gourlay-portfolio",
+        "description": "Making this website was a labour of love, and a good learning experience as well. I wanted to improve on my JavaScript and become more familiar with React. I used Material UI for the basic UI elements, and since I can't draw, I used ChatGPT to generate several of the icons.",
+        "icon": "profile_icon.png",
+        "tags": ["React", "JavaScript", "graphic design"]
+    }
+]

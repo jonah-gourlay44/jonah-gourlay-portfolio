@@ -37,7 +37,7 @@ export default function HomePage({menu}) {
                 padding={2}
                 className='profile'
                 />
-            <Typography variant='h2' padding={1} color='grey.main'>
+            <Typography variant='h2' padding={1} color='grey.main' fontFamily='bebas-neue'>
               A Bit About Me
             </Typography>
             <Typography variant='body1' color='grey.main' marginRight={2} marginBottom={10}>
