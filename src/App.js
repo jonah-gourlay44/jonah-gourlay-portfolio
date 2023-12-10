@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import './Portfolio.css'
 import MenuDrawer from './MenuDrawer'
 import HomeIcon from '@mui/icons-material/Home'
@@ -62,7 +62,7 @@ function App() {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme} >
-        <Router basename='/jonah-gourlay-portfolio'>
+        <Router>
           <Routes>
             {
               portfolio_items.map((item) => (
