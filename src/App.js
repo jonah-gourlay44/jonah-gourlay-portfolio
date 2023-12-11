@@ -53,11 +53,10 @@ function App() {
       page: 'Work Experience',
       icon: <WorkIcon />,
       link: '/experience',
-      component: WorkPage
+      component: WorkPage,
+      menu_color: 'white'
     }
   ]
-
-  console.log(projects)
 
   return (
     <StyledEngineProvider injectFirst>
@@ -65,8 +64,8 @@ function App() {
         <Router>
           <Routes>
             {
-              portfolio_items.map((item) => (
-                <Route path={item.link} element={<item.component meta={item.meta} menu={<MenuDrawer items={portfolio_items} color={item.menu_color}/>} />} />
+              portfolio_items.map((item, idx) => (
+                <Route key={idx} path={item.link} element={<item.component meta={item.meta} menu={<MenuDrawer items={portfolio_items} color={item.menu_color}/>} />} />
               ))
             }
           </Routes>

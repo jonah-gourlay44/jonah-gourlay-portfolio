@@ -44,8 +44,8 @@ export default function CardDrawer({ color, cards }) {
         </Box>
         <Grid padding={2} spacing={2} container sx={{height: '100%'}}>
           {
-            cards.map((card) => (
-              <Grid item sm={6} md={4} lg={3} sx={{minHeight: '10vw'}}>
+            cards.map((card, idx) => (
+              <Grid item sm={6} md={4} lg={3} sx={{minHeight: '10vw'}} key={idx}>
                 {card}
               </Grid>
             ))

@@ -29,8 +29,8 @@ export default function MenuDrawer({ items, color }) {
             }}
         >
             <List>
-                {items.map((item) => (
-                    <ListItem key={item.page} disablePadding>
+                {items.map((item, key) => (
+                    <ListItem key={key} disablePadding>
                         <ListItemButton LinkComponent={Link} to={item.link}>
                             <ListItemIcon>
                                 {item.icon}

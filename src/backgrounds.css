@@ -1,0 +1,28 @@
+.background {
+    width: 1500px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+#matterhorn-background {
+    top: -100px;
+}
+
+#notredame-background {
+    top: 0;
+}
+
+#boating-background {
+    top: -150px;
+}
+
+@media (max-width: 600px) {
+    #matterhorn-background {
+        left: -150px;
+    }
+
+    #boating-background {
+        right: 0;
+    }
+}
