@@ -1,0 +1,53 @@
+[
+    {
+        "company": "DaoAI",
+        "title": "Software Engineer, Team Lead",
+        "dates": {
+            "start": {
+                "month": "May",
+                "year": "2020"
+            },
+            "end": {
+                "present": true
+            }
+        },
+        "tags": [
+            "C++",
+            "Project Management",
+            "Computer Vision",
+            "ROS/ROS2",
+            "Python",
+            "OOD"
+        ],
+        "logo": "daoai-robotics-logo.jpg",
+        "website": "https://www.daoai.com/",
+        "description": "I began working at DaoAI Robotics as a co-op in May 2020. After my eight month co-op term, I was brought back on as a part-time developer while I was finishing my studies. After school I signed a full-time contract to work for the company as a team lead. I have been in my current position for one and a half years."
+    },
+    {
+        "company": "Nutrien",
+        "title": "Embedded Software Engineer",
+        "dates": {
+            "start": {
+                "month": "May",
+                "year": "2019"
+            },
+            "end": {
+                "month": "June",
+                "year": "2021"
+            }
+        },
+        "tags": [
+            "Python",
+            "ROS",
+            "C++",
+            "JavaScript",
+            "PLC",
+            "LiDAR",
+            "Point Cloud Processing",
+            "Computer Vision"
+        ],
+        "logo": "nutrien-logo.jpg",
+        "website": "https://www.nutrien.com/",
+        "description": "For four months I worked at Nutrien as a co-op student developing LiDAR algorithms, and an HMI prototype. I was hired back as a developer for a year while I was still in school to port some of the algorithms I had developed into GPU compatible code."
+    }
+]

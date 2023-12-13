@@ -24,9 +24,9 @@ export default function ProjectCard(props) {
         subheader={
           <Stack direction='row' spacing={0.5} paddingTop={0.5} >
             {
-            props.tags.map((tag, idx) => (
-              <Chip label={tag} key={idx} />
-            ))
+              props.tags.map((tag, idx) => (
+                <Chip label={tag} key={idx} />
+              ))
             }
           </Stack>
         }

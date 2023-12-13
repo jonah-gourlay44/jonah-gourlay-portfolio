@@ -13,6 +13,7 @@ import WorkPage from './WorkPage'
 import ProjectPage from './ProjectPage'
 
 import projects from './content/projects.json'
+import experiences from './content/work.json'
 
 const theme = createTheme({
   palette: {
@@ -54,7 +55,8 @@ function App() {
       icon: <WorkIcon />,
       link: '/experience',
       component: WorkPage,
-      menu_color: 'white'
+      menu_color: 'white',
+      meta: experiences
     }
   ]
 

@@ -9,6 +9,10 @@
     {
       "src": "icons/profile_icon.png",
       "type": "image/png"
+    },
+    {
+      "src": "icons/nutrien-logo.jpg",
+      "type": "image/jpg"
     }
   ],
   "start_url": ".",
