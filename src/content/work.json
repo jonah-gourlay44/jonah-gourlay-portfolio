@@ -21,7 +21,39 @@
         ],
         "logo": "daoai-robotics-logo.jpg",
         "website": "https://www.daoai.com/",
-        "description": "I began working at DaoAI Robotics as a co-op in May 2020. After my eight month co-op term, I was brought back on as a part-time developer while I was finishing my studies. After school I signed a full-time contract to work for the company as a team lead. I have been in my current position for one and a half years."
+        "description": "I began working at DaoAI Robotics as a co-op in May 2020. After my eight month co-op term, I was brought back on as a part-time developer while I was finishing my studies. After school I signed a full-time contract to work for the company as a team lead. I have been in my current position for one and a half years.",
+        "info": {
+            "description": "DaoAI is a robotics startup focused on delivering factory automation solutions. While the primary application focuses on automated bin-picking, the company also has applications for camera inspection, and robotic guidance. As a co-op, I had the opportunity to work on a wide variety of projects, including a deep learning pipleline and a point cloud alignment algorithm. I was hired back as a part-time developer, tasked with designing and implementing the robotic guidance application. As the project grew, I took on more responsibility, managing a team of five and ensuring that deliverables were met. After graduation I signed a full-time contract with the company to continue my work as a team lead. Since that project ended, I have designed and developed two further customer-facing applications.",
+            "roles": [
+                {
+                    "summary": "Team Lead, Camera Inspection Application",
+                    "details": "Currently I am leading the development of a web application for configuring camera inspection jobs. This involves managing a team of four, completing architecture design, and performing thorough integration testing."
+                },
+                {
+                    "summary": "Team Lead, Waste to Energy Plant Automation",
+                    "details": "The company recently undertook a project to automate a waste to energy power plant. Two robotic claws must operate autonomously to pick and sort garbage, eventually casting it to two incinerators to be burned and converted into electricity. I led the development of the project, coordinating between hardware, software, and testing teams to deliver the initial release on time. The project is ongoing and in its field testing phase."   
+                },
+                {
+                    "summary": "Team Lead, Robotic Guidance Application",
+                    "details": "After my co-op term at DaoAI, I was hired back as a part-time developer, leading the design of a new robotic guidance application. Through a graphical interface, users are able to configure a six-degree-of-freedom robotic manipulator and program it to perform various pick and place tasks. For this application, I was responsible for leading five developers, managing timelines, and performing architecture design"
+                },
+                {
+                    "summary": "Deep Learning Model Prototyping and Data Pipelining",
+                    "details": "At the end of my co-op term with DaoAI, I was tasked with researching and prototyping deep learning methods for identifying and segmenting parts in a bin. I used a custom variation of Facebook's MaskRCNN to perform segmentation and compute axis-aligned bounding boxes for different standard parts. I set up many of the training tools, Docker containers, and models that the department stills uses today."
+                },
+                {
+                    "summary": "Point Cloud Alignment Algorithm",
+                    "details": "One of the main projects given to me in my co-op term with DaoAI was a point cloud alignment algorithm. It had to compute a transform from cloud A to cloud B that would align features present in both clouds. After completing the algorithm, I was able to achieve a 5% speedup over the subscription-based software we were using previously."
+                },
+                {
+                    "summary": "Integrated Data Display",
+                    "details": "The first main project I was given in my co-op term was to design the display that would be used in the main bin picking application. I created my design based on the MVC design pattern, and it is still used to display all captured and post-processed data to users of our software."
+                }
+            ],
+            "samples": [
+
+            ]
+        }
     },
     {
         "company": "Nutrien",
@@ -48,6 +80,41 @@
         ],
         "logo": "nutrien-logo.jpg",
         "website": "https://www.nutrien.com/",
-        "description": "For four months I worked at Nutrien as a co-op student developing LiDAR algorithms, and an HMI prototype. I was hired back as a developer for a year while I was still in school to port some of the algorithms I had developed into GPU compatible code."
+        "description": "For four months I worked at Nutrien as a co-op student developing LiDAR algorithms, and an HMI prototype. I was hired back as a developer for a year while I was still in school to port some of the algorithms I had developed into GPU compatible code.",
+        "info": {
+            "description": "Nutrien is one of Canada's largest agriculture technology firms. They have operations that span the entire range of activities in the fertilizer sector—including the mining of potash, which is used as a fertilizer additive. I worked in the mining department, where the company had decided to explore migrating their operations to a tele-remote system. This would allow operators to control the borers from an office above ground, not only reducing health risks to the operators, but also significantly improving the mine's uptime. When I joined, the automation project was still in its beginning stages. I was tasked with exploring different technologies to determine how the operators above ground could gain visibility into the mine environment underground. Using LiDAR sensors, ROS, and several other open source libraries, I built software prototypes that gave the management team insight into the feasibility of tele-remote borer control.",
+            "roles": [
+                {
+                    "summary": "Mine wall detection algorithm",
+                    "details": "I was tasked with creating an algorithm that was capable of detecting walls in an underground mining environment, using LiDAR data as input. I accomplished the first working prototype within two months using C++, Python, ROS, and the Point Cloud Library. My working prototype was demonstrated to, and approved by senior management within the automation program. This algorithm still forms the basis of the production code that is used for wall detection in the company's teleremote mining operations."
+                },
+                {
+                    "summary": "Teleremote mining human machine interface",
+                    "details": "I completed the LiDAR algorithm two months ahead of schedule, so I was asked to make a prototype for the HMI application used by operators to control the machines underground. I built an Electron app using JavaScript that integrated PLC communication, camera feeds, and the LiDAR algorithm I created to display imprtant information to operators. This prototype was demonstrated to senior management at the end of my co-op term."
+                },
+                {
+                    "summary": "Hardware and software tool specification",
+                    "details": "My time at Nutrien was spent prototyping internal software for an emerging department. Because of this, there was not a significant knowledge base around which hardware platforms or software toolchains would deliver the best results. As part of the work I completed, I created documents that detailed the pros and cons of the various hardware and software tools I used. This included Nvidia Jetson AGX, 4K hardware cameras, ROS, GStreamer, and Point Cloud Library."
+                },
+                {
+                    "summary": "GPU wall detection algorithm",
+                    "details": "After my co-op term at Nutrien, I was hired back as a part-time developer to port the wall detection algorithm I had created to run on GPU. I taught myself CUDA C++, and successfully reimplemented the algorithm within eight months to obtain a 600% code speedup and a 70% reduction in CPU memory usage. This made better practical use of the Nvidia Jetson's capabilities, saving memory for more critical software operations."
+                }
+            ],
+            "samples": [
+                {
+                    "title": "Teleremote HMI Prototype",
+                    "thumbnail": "borer_hmi_thumbnail.jpg",
+                    "media": "borer_hmi.gif",
+                    "type": "image"
+                },
+                {
+                    "title": "LiDAR Wall Detection",
+                    "thumbnail": "wall_detection_thumbnail.jpg",
+                    "media": "wall_detection.mp4",
+                    "type": "video"
+                }
+            ]
+        }
     }
 ]

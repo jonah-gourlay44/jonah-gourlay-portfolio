@@ -1,6 +1,7 @@
 import background from './backgrounds/img_0099.jpg'
 import ContentPage from './ContentPage'
 import WorkCard from './WorkCard'
+import InfoPage from './InfoPage'
 
 export default function WorkPage({menu, meta}) {
   const work_meta = {
@@ -10,6 +11,8 @@ export default function WorkPage({menu, meta}) {
     },
     'menu_color': 'white'
   }
+
+  const icon_folder = `${process.env.PUBLIC_URL}/icons`
 
   return (
     <ContentPage
@@ -21,13 +24,22 @@ export default function WorkPage({menu, meta}) {
           <WorkCard
             company={experience.company}
             title={experience.title}
-            logo={`${process.env.PUBLIC_URL}/icons/${experience.logo}`}
+            logo={`${icon_folder}/${experience.logo}`}
             dates={experience.dates}
             tags={experience.tags}
             website={experience.website}
             key={idx}
+            overview={experience.description}
           >
-            {experience.description}
+            <InfoPage
+              header={experience.company}
+              subheader={experience.title}
+              icon={`${icon_folder}/${experience.logo}`}
+              dates={experience.dates}
+              description={experience.info.description}
+              roles={experience.info.roles}
+              samples={experience.info.samples}
+            />
           </WorkCard>
         ))
       }
