@@ -14,6 +14,7 @@ import ProjectPage from './ProjectPage'
 
 import projects from './content/projects.json'
 import experiences from './content/work.json'
+import coursework from './content/coursework.json'
 
 const theme = createTheme({
   palette: {
@@ -40,7 +41,8 @@ function App() {
       icon: <SchoolIcon />,
       link: '/coursework',
       component: SchoolPage,
-      menu_color: 'white'
+      menu_color: 'white',
+      meta: coursework
     },
     {
       page: 'Personal Projects',

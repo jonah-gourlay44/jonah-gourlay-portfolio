@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Reinforcement Learning Enabled Robotic Control",
+        "course": "Engineering Capstone",
+        "dates": {
+            "start": {
+                "month": "September",
+                "year": "2021"
+            },
+            "end": {
+                "month": "May",
+                "year": "2022"
+            }
+        },
+        "tags": [
+            "Reinforcement Learning",
+            "Control Theory",
+            "C++",
+            "ROS2",
+            "Signal Processing"
+        ],
+        "icon": "ubc-logo.jpg",
+        "github": "https://github.com/jonah-gourlay44/gym2real",
+        "website": "https://jonah-gourlay44.github.io/gym2real/",
+        "description": "In this project, my capstone team and I developed a learning platform to introduce students to the concept of reinforcement learning and its applications. We constructed a two wheel inverted pendulum, and used reinforcement learning to create a self-balancing control routine.",
+        "info": {
+            "description": "Reinforcement learning is a branch of deep learning that deals specifically with learning an output based on goal optimization. It has interesting applications in domains where the dynamics of a problem are not well-understood, or have no closed-form solution. Controlling humanoid robots, or automated stock investing are two examples. The main issue with reinforcement learning, is a lack of real world data to use for model training. Many people rely on simulated data to train their models, which can bridge poorly into the real world. This was the focus of our project. We wanted to see how simulated data could be used to effectively train a reinforcement learning model for use in a real world problem. We used the well-understood two wheel inverted pendulum problem as a toy example to demonstrate our method. More information on the project and our implementation can be found on our website and GitHub.",
+            "roles": [
+                {
+                    "summary": "Device driver implementation",
+                    "details": "Implemented a C++ driver for the inertial measurement unit used to collect angle and position data"
+                },
+                {
+                    "summary": "Control system architecture design",
+                    "details": "Designed the communication layer and program architecture used for controlling the two-wheel inverted pendulum using C++ and ROS2."
+                },
+                {
+                    "summary": "Portability considerations",
+                    "details": "Created a Docker container and designed easy-to-follow build steps so our method could easily be reproduced by anyone looking to learn more about the simulation to real gap in reinforcement learning."
+                }
+            ],
+            "samples": [
+
+            ]
+        }
+    },
+    {
+        "title": "Positron Emission Event Reconstruction",
+        "course": "Engineering Capstone",
+        "dates": {
+            "start": {
+                "month": "September",
+                "year": "2020"
+            },
+            "end": {
+                "month": "May",
+                "year": "2021"
+            }
+        },
+        "tags": [
+            "Deep Learning",
+            "Python",
+            "Liquid Xenon PET",
+            "Medical Technology",
+            "Physics"
+        ],
+        "icon": "ubc-logo.jpg",
+        "github": "",
+        "website": "",
+        "description": "In this project, my capstone team and I developed a novel method for localizing scattering events in an LXe PET detector. This may sound a little cryptic, but the basic concept is similar to localizing the point at which a pebble has been dropped into a tank of water. Previous methods for doing this were time intensive, where ours was much faster, offering a 75% speedup.",
+        "info": {
+            "description": "Positron emission tomography, or PET for short, is an imaging technique often used to localize cancerous tumors inside a patient's body. A radioactive tracer is injected into a patients body, and will settle around areas of high metabolic activity. The particles emitted from the tracer can then be detected and localized using a PET scanner. At the time this project was completed, the crystalline material for the scanner cost around $50 per cubic centimeter. A new scanner prototype was invented that used relatively inexpensive liquid xenon (LXe)—$3 per cubic centimeter—but no computational methods existed that could quickly localize emission events. This is where our work came in. My team and I designed a novel method for analyzing detector data to localize inter-scanner events. I have provided the full paper below which includes in-depth details on the context of the project and our work.",
+            "roles": [
+                {
+                    "summary": "Visualization and training tools",
+                    "details": "Designed several python tools to enable data visualization, as well as to improve the efficiency of our model training and benchmarking process"
+                },
+                {
+                    "summary": "Neural network design",
+                    "details": "Designed a novel ResNet architecture to solve the task of localizating scattering events from six different silicon photomultiplier arrays"
+                }
+            ],
+            "samples": [
+                {
+                    "title": "PET Event Reconstruction Paper",
+                    "thumbnail": "pet_capstone_thumbnail.jpg",
+                    "media": "lxe_pet_final_report.pdf",
+                    "type": "file"
+                }
+            ]
+        }
+    }
+]

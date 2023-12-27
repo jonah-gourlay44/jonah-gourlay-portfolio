@@ -15,7 +15,8 @@ export default function MediaDisplayButton({thumbnail, media, title, type}) {
 
   const media_types = {
     'image': 'img',
-    'video': 'video'
+    'video': 'video',
+    'file': 'iframe'
   }
 
   const MediaButton = styled(ButtonBase)(({ theme }) => ({
@@ -79,7 +80,7 @@ export default function MediaDisplayButton({thumbnail, media, title, type}) {
         </MediaText>
       </MediaButton>
       <PageBackdrop open={opened} onClick={handleClose}>
-          <Box width='65%' component={media_types[type]} src={media} autoplay controls/>
+          <Box width='65%' component={media_types[type]} src={media} autoPlay controls/>
       </PageBackdrop>
     </Box>
   )

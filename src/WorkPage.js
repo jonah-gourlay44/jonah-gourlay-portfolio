@@ -1,6 +1,6 @@
 import background from './backgrounds/img_0099.jpg'
 import ContentPage from './ContentPage'
-import WorkCard from './WorkCard'
+import PortfolioItemCard from './PortfolioItemCard'
 import InfoPage from './InfoPage'
 
 export default function WorkPage({menu, meta}) {
@@ -21,10 +21,10 @@ export default function WorkPage({menu, meta}) {
       meta={work_meta}
       cards={
         meta.map((experience, idx) => (
-          <WorkCard
-            company={experience.company}
-            title={experience.title}
-            logo={`${icon_folder}/${experience.logo}`}
+          <PortfolioItemCard
+            header={experience.company}
+            subheader={experience.title}
+            icon={`${icon_folder}/${experience.logo}`}
             dates={experience.dates}
             tags={experience.tags}
             website={experience.website}
@@ -40,7 +40,7 @@ export default function WorkPage({menu, meta}) {
               roles={experience.info.roles}
               samples={experience.info.samples}
             />
-          </WorkCard>
+          </PortfolioItemCard>
         ))
       }
     />

@@ -8,10 +8,10 @@ export default function InfoPage({header, subheader, icon, dates, description, r
     <Box width='100%' display='flex' justifyContent='center'>
       <Box width='65vw' sx={{paddingTop: '40px'}}>
         <Box display='flex'>
-          <Typography variant='h1' fontFamily='bebas-neue' lineHeight='80%' paddingRight='20px'>
+          <Typography variant='h1' fontFamily='bebas-neue' lineHeight='80%' paddingRight='40px'>
             {header}
           </Typography>
-          <Avatar component={Paper} elevation={1} src={icon} sx={{width: '70px', height: '70px', justifySelf: 'center'}}/>
+          <Avatar component={Paper} elevation={1} src={icon} sx={{width: '70px', height: '70px', marginBottom: '10px', marginTop: 'auto'}}/>
           <Typography width='100%' variant='h6' textAlign='right' fontFamily='bebas-neue' color='grey.main' marginTop='auto' marginBottom={0}>
             {subheader}
           </Typography>
