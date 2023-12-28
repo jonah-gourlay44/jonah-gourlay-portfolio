@@ -1,18 +1,38 @@
+import React from 'react'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import { Box, Typography, Divider, Avatar, Paper, Grid, ImageList, ImageListItem } from '@mui/material'
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMoreRounded'
 import MediaDisplayButton from './MediaDisplayButton'
 
 export default function InfoPage({header, subheader, icon, dates, description, roles, samples}) {
+  const large_screen = useMediaQuery('(min-width: 500px)')
+  const [wrapped, setWrapped] = React.useState(false)
+  const titleRef = React.useRef()
+
+  React.useEffect(() => {
+    const element = titleRef.current
+    if (element) {
+      const originalHeight = element.clientHeight
+      element.style.whiteSpace = "nowrap"
+      const nowrapHeight = element.clientHeight
+      element.style.whiteSpace = ""
+
+      setWrapped(originalHeight > nowrapHeight)
+    }
+  }, [])
+  
   return (
     <Box width='100%' display='flex' justifyContent='center'>
       <Box width='65vw' sx={{paddingTop: '40px'}}>
-        <Box display='flex'>
-          <Typography variant='h1' fontFamily='bebas-neue' lineHeight='80%' paddingRight='40px'>
-            {header}
-          </Typography>
-          <Avatar component={Paper} elevation={1} src={icon} sx={{width: '70px', height: '70px', marginBottom: '10px', marginTop: 'auto'}}/>
-          <Typography width='100%' variant='h6' textAlign='right' fontFamily='bebas-neue' color='grey.main' marginTop='auto' marginBottom={0}>
+        <Box display={large_screen ? 'flex' : 'block'}>
+          <Box display={wrapped ? 'block' : 'flex'}>
+            <Typography ref={titleRef} variant={wrapped ? 'h2' : 'h1'} fontFamily='bebas-neue' lineHeight='80%' paddingRight={large_screen ? '40px' : '30px'}>
+              {header}
+            </Typography>
+            <Avatar component={Paper} elevation={1} src={icon} sx={{width: '70px', height: '70px', marginBottom: '10px', marginTop: 'auto'}}/>
+          </Box>
+          <Typography width='100%' variant='h6' textAlign={large_screen ? 'right' : 'left'} fontFamily='bebas-neue' color='grey.main' marginTop='auto' marginBottom={0}>
             {subheader}
           </Typography>
         </Box>
