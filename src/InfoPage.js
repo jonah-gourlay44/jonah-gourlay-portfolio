@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMoreRounded'
 import MediaDisplayButton from './MediaDisplayButton'
 
 export default function InfoPage({header, subheader, icon, dates, description, roles, samples}) {
-  const large_screen = useMediaQuery('(min-width: 500px)')
+  const large_screen = useMediaQuery('(min-width: 600px)')
   const [wrapped, setWrapped] = React.useState(false)
   const titleRef = React.useRef()
 
@@ -26,7 +26,7 @@ export default function InfoPage({header, subheader, icon, dates, description, r
     <Box width='100%' display='flex' justifyContent='center'>
       <Box width='65vw' sx={{paddingTop: '40px'}}>
         <Box display={large_screen ? 'flex' : 'block'}>
-          <Box display={wrapped ? 'block' : 'flex'}>
+          <Box display={wrapped && !large_screen ? 'block' : 'flex'}>
             <Typography ref={titleRef} variant={wrapped ? 'h2' : 'h1'} fontFamily='bebas-neue' lineHeight='80%' paddingRight={large_screen ? '40px' : '30px'}>
               {header}
             </Typography>

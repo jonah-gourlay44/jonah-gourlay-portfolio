@@ -7,14 +7,26 @@ import DownIcon from '@mui/icons-material/KeyboardArrowDownRounded'
 import Grid from '@mui/material/Grid'
 import './CardDrawer.css'
 
-export default function CardDrawer({ color, cards }) {
-  const [isDrawerOpen, setIsDrawerOpen] = React.useState(true)
+export default function CardDrawer({ color, cards, openDelay }) {
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false)
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return
     }
     setIsDrawerOpen(open)
   }
+
+  if (openDelay === undefined) {
+    openDelay = 0
+  }
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsDrawerOpen(true)
+    }, openDelay)
+
+    return () => clearTimeout(timer)
+  })
 
   return (
     <Box sx={{
