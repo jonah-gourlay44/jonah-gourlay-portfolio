@@ -14,10 +14,16 @@ export default function HomePage({menu}) {
   const backgroundRef = React.useRef()
 
   React.useEffect(() => {
-    backgroundRef.current.onload = () => {
+    const img = backgroundRef.current
+    
+    if (img.complete) {
       setLoaded(true)
+    } else {
+      backgroundRef.current.onload = () => {
+        setLoaded(true)
+      }
     }
-  }, [])
+  }, [setLoaded])
 
   return (
     <Box

@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { Card, CardContent, CardHeader, CardActions, CardActionArea } from '@mui/material'
 import { IconButton, Typography, Collapse, Chip, Grid, Avatar, Box, Paper, Grow, Divider } from '@mui/material'
 import ExpandMore from './ExpandMore'
@@ -6,6 +7,13 @@ import PublicIcon from '@mui/icons-material/Public'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import CloseIcon from '@mui/icons-material/CloseRounded'
+
+function Popup({children}) {
+  return ReactDOM.createPortal(
+    children,
+    document.body
+  )
+}
 
 export default function PortfolioItemCard({header, subheader, dates, tags, icon, website, github, overview, children}) {
   const [expanded, setExpanded] = React.useState(false)
@@ -101,15 +109,16 @@ export default function PortfolioItemCard({header, subheader, dates, tags, icon,
           </Typography>
         </CardContent>
       </Collapse>
+      <Popup >
       <Grow in={opened} style={{transformOrigin: transformOrigin}}>
         <Paper
           sx={{
             position: 'fixed',
             top: '0',
             right: '0',
-            width: '100%',
-            height: '100%',
-            zIndex: '1000',
+            width: '100vw',
+            height: '100vh',
+            zIndex: '5000',
             overflowY: 'scroll'
           }}
         >
@@ -128,6 +137,7 @@ export default function PortfolioItemCard({header, subheader, dates, tags, icon,
           {children}
         </Paper>
       </Grow>
+      </Popup>
     </Card>
   )
 }

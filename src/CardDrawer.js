@@ -26,7 +26,7 @@ export default function CardDrawer({ color, cards, openDelay }) {
     }, openDelay)
 
     return () => clearTimeout(timer)
-  })
+  }, [openDelay])
 
   return (
     <Box sx={{
@@ -44,11 +44,15 @@ export default function CardDrawer({ color, cards, openDelay }) {
       <Drawer variant='persistent' anchor='bottom' open={isDrawerOpen} onClose={toggleDrawer(false)} hideBackdrop PaperProps={{className: 'drawer-paper'}}>
         <Box sx={{
           display: 'flex',
-          top: 0,
+          top: '40vh',
+          left: 0,
+          right: 0,
           marginLeft: 'auto',
           marginRight: 'auto',
           justifyContent: 'center',
-          paddingTop: 1
+          paddingTop: 1,
+          position: 'fixed',
+          zIndex: 200
         }}>
           <IconButton onClick={toggleDrawer(false)}>
             <DownIcon />

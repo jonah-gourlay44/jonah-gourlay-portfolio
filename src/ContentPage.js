@@ -8,10 +8,17 @@ export default function ContentPage({header, menu, cards, meta}) {
   const backgroundRef = React.useRef()
 
   React.useEffect(() => {
-    backgroundRef.current.onload = () => {
+    const img = backgroundRef.current
+
+    if (img.complete) {
       setLoaded(true)
+    } else {
+      img.onload = () => {
+        setLoaded(true)
+      }
     }
-  }, [])
+
+  }, [setLoaded])
 
   return (
     <Box sx={{
