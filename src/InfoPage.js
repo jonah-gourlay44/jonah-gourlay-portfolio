@@ -83,6 +83,7 @@ export default function InfoPage({header, subheader, icon, dates, description, r
                   title={sample.title}
                   thumbnail={`${process.env.PUBLIC_URL}/media/${sample.thumbnail}`}
                   type={sample.type}
+                  description={sample.description}
                 />
               </ImageListItem>
             ))

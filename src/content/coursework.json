@@ -85,7 +85,8 @@
                     "title": "PET Event Reconstruction Paper",
                     "thumbnail": "pet_capstone_thumbnail.jpg",
                     "media": "lxe_pet_final_report.pdf",
-                    "type": "file"
+                    "type": "file",
+                    "description": "This is the paper we submitted on our work for the final assessment. It includes details on the project background as well as the methods we used in our implementation."
                 }
             ]
         }

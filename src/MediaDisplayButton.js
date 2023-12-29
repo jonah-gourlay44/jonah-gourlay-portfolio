@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@mui/material/styles'
 import { Box, ButtonBase, Typography, Backdrop } from '@mui/material'
 
-export default function MediaDisplayButton({thumbnail, media, title, type}) {
+export default function MediaDisplayButton({thumbnail, media, title, type, description}) {
   const [opened, setOpened] = React.useState(false)
 
   const handleOpen = () => {
@@ -80,7 +80,28 @@ export default function MediaDisplayButton({thumbnail, media, title, type}) {
         </MediaText>
       </MediaButton>
       <PageBackdrop open={opened} onClick={handleClose}>
-          <Box width='65%' zIndex={1000} component={media_types[type]} src={media} controls/>
+        <Box width='100%' height='100%' sx={{overflowY: 'scroll'}}>
+          <Typography paddingTop={3} fontFamily='bebas-neue' textAlign='center' variant='h2' color='white.main'>
+            {title}
+          </Typography>
+          <Box 
+            width='65%' 
+            minHeight='100px' 
+            onClick={(event) => { event.stopPropagation() }}
+            left={0}
+            right={0}
+            marginLeft='auto'
+            marginRight='auto'
+          >
+            <Box width='100%' zIndex={1000} component={media_types[type]} src={media} controls/>
+            <Typography variant='h5' fontFamily='bebas-neue' textAlign='left' color='white.main' paddingTop='10px'>
+              Description
+            </Typography>
+            <Typography variant='body2' textAlign='left' color='white.main' paddingBottom='100px'>
+              {description}
+            </Typography>
+          </Box>
+        </Box>
       </PageBackdrop>
     </Box>
   )

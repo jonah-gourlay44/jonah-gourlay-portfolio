@@ -49,7 +49,7 @@ export default function CardDrawer({ color, cards, openDelay }) {
           marginLeft: 'auto',
           marginRight: 'auto',
           justifyContent: 'center',
-          paddingTop: 1,
+          paddingTop: '1px',
           position: 'fixed',
           zIndex: 200
         }}>
@@ -57,7 +57,7 @@ export default function CardDrawer({ color, cards, openDelay }) {
             <DownIcon />
           </IconButton>
         </Box>
-        <Grid padding={2} spacing={2} container sx={{height: '100%'}}>
+        <Grid padding={2} paddingTop={4} spacing={2} container sx={{height: '100%'}}>
           {
             cards.map((card, idx) => (
               <Grid item sm={6} md={4} lg={3} sx={{minHeight: '10vw'}} key={idx}>

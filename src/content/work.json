@@ -106,13 +106,15 @@
                     "title": "Teleremote HMI Prototype",
                     "thumbnail": "borer_hmi_thumbnail.jpg",
                     "media": "borer_hmi.gif",
-                    "type": "image"
+                    "type": "image",
+                    "description": "This is a GIF of the HMI prototype I created. The dials in the center are activated by dummy values being read from a PLC. The four camera feeds to the right are live (I wave my hand in front of them to demonstrate near the end of the loop). The lefthand window shows live mine data including a point cloud and borer position."
                 },
                 {
                     "title": "LiDAR Wall Detection",
                     "thumbnail": "wall_detection_thumbnail.jpg",
                     "media": "wall_detection.mp4",
-                    "type": "video"
+                    "type": "video",
+                    "description": "This is a screen recording of the wall detection algorithm I made. The little box in the center is a dummy robot controlled via the keyboard. The litle line connecting it to the point cloud represents it's closest distance from it's environment. A current distance and distance histogram are shown to the left. The red and yellow \"buffer zones\" show where walls have been detected, and provide a visual representation of a safe driving distance from each wall."
                 }
             ]
         }
