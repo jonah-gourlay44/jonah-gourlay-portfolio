@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jonah-gourlay-portfolio/static/css/main.ff1db78f.css",
-    "main.js": "/jonah-gourlay-portfolio/static/js/main.c7ee690f.js",
+    "main.css": "/jonah-gourlay-portfolio/static/css/main.404f9cb3.css",
+    "main.js": "/jonah-gourlay-portfolio/static/js/main.82c75571.js",
     "static/js/787.7da95b79.chunk.js": "/jonah-gourlay-portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/img_0099.jpg": "/jonah-gourlay-portfolio/static/media/img_0099.b3e71f46b26cb023053e.jpg",
     "static/media/img_0047.jpg": "/jonah-gourlay-portfolio/static/media/img_0047.43df507b9b8e980c4426.jpg",
@@ -10,12 +10,12 @@
     "static/media/profile.jpg": "/jonah-gourlay-portfolio/static/media/profile.6beb65902b90a3eb767b.jpg",
     "static/media/BebasNeue-Regular.ttf?": "/jonah-gourlay-portfolio/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "index.html": "/jonah-gourlay-portfolio/index.html",
-    "main.ff1db78f.css.map": "/jonah-gourlay-portfolio/static/css/main.ff1db78f.css.map",
-    "main.c7ee690f.js.map": "/jonah-gourlay-portfolio/static/js/main.c7ee690f.js.map",
+    "main.404f9cb3.css.map": "/jonah-gourlay-portfolio/static/css/main.404f9cb3.css.map",
+    "main.82c75571.js.map": "/jonah-gourlay-portfolio/static/js/main.82c75571.js.map",
     "787.7da95b79.chunk.js.map": "/jonah-gourlay-portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff1db78f.css",
-    "static/js/main.c7ee690f.js"
+    "static/css/main.404f9cb3.css",
+    "static/js/main.82c75571.js"
   ]
 }
