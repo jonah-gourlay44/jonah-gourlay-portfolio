@@ -88,6 +88,7 @@ export default function InfoPage({header, subheader, icon, dates, description, r
             ))
           }
         </ImageList>
+        <Box height='100px'/>
       </Box>
     </Box>
   ) 

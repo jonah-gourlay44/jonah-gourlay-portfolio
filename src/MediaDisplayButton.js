@@ -80,7 +80,7 @@ export default function MediaDisplayButton({thumbnail, media, title, type}) {
         </MediaText>
       </MediaButton>
       <PageBackdrop open={opened} onClick={handleClose}>
-          <Box width='65%' component={media_types[type]} src={media} controls/>
+          <Box width='65%' zIndex={1000} component={media_types[type]} src={media} controls/>
       </PageBackdrop>
     </Box>
   )

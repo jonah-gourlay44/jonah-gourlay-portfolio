@@ -44,7 +44,6 @@ export default function CardDrawer({ color, cards, openDelay }) {
       <Drawer variant='persistent' anchor='bottom' open={isDrawerOpen} onClose={toggleDrawer(false)} hideBackdrop PaperProps={{className: 'drawer-paper'}}>
         <Box sx={{
           display: 'flex',
-          top: '40vh',
           left: 0,
           right: 0,
           marginLeft: 'auto',
