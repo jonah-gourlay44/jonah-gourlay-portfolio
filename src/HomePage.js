@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography'
 import home_content from './content/home.json'
 import Fade from '@mui/material/Fade'
 import './HomePage.css'
+import Footer from './Footer'
 
 export default function HomePage({menu}) {
   const [loaded, setLoaded] = React.useState(false)
@@ -72,6 +73,7 @@ export default function HomePage({menu}) {
             </Typography>
           </Box>
         </Box>
+        <Footer name='Jonah Gourlay' />
       </ScrollingPaper>
     </Box>
   )

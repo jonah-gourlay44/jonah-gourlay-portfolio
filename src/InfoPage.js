@@ -4,6 +4,7 @@ import { Box, Typography, Divider, Avatar, Paper, Grid, ImageList, ImageListItem
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMoreRounded'
 import MediaDisplayButton from './MediaDisplayButton'
+import Footer from './Footer'
 
 export default function InfoPage({header, subheader, icon, dates, description, roles, samples}) {
   const large_screen = useMediaQuery('(min-width: 600px)')
@@ -74,7 +75,7 @@ export default function InfoPage({header, subheader, icon, dates, description, r
         <Typography variant='h4' fontFamily='bebas-neue' color='grey.dark' paddingTop='20px'>
           {samples.length === 0 ? '' : 'Work Samples'}
         </Typography>
-        <ImageList variant='masonry' cols={3} gap={8}>
+        <ImageList variant='masonry' cols={3} gap={8} sx={{paddingBottom: '100px'}}>
           {
             samples.map((sample, idx) => (
               <ImageListItem key={idx}>
@@ -89,7 +90,7 @@ export default function InfoPage({header, subheader, icon, dates, description, r
             ))
           }
         </ImageList>
-        <Box height='100px'/>
+        <Footer name='Jonah Gourlay' />
       </Box>
     </Box>
   ) 
