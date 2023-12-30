@@ -6,7 +6,6 @@ import UpIcon from '@mui/icons-material/KeyboardArrowUpRounded'
 import DownIcon from '@mui/icons-material/KeyboardArrowDownRounded'
 import Grid from '@mui/material/Grid'
 import './CardDrawer.css'
-import Footer from './Footer'
 
 export default function CardDrawer({ color, cards, openDelay }) {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false)
@@ -67,7 +66,6 @@ export default function CardDrawer({ color, cards, openDelay }) {
             ))
           }
         </Grid>
-        <Footer name='Jonah Gourlay' />
       </Drawer>
     </Box>
   )
